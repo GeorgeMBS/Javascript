@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontetira</title>
+    <style>
+        body {
+            background-color: rgba(245, 9, 9, 0.72);
+            color: white;
+            font: 2em arial;
+        }
+
+        h1 {
+            background-color: rgb(43, 58, 226);
+            text-align: center;
+        }
+
+        div {
+            background-color: rgb(43, 80, 226);
+            margin-top: 50px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>GPS</h1>
+    <h2>Qual a sua origem?</h2>
+    País: <input type="text" id="inp">
+    <input type="button" value="Definir" onclick="def()">
+
+    <div id="res">
+        
+    </div>
+
+    <script>
+        
+        function def() {
+            var nac = document.getElementById('inp')
+            var resultado = document.getElementById('res')
+
+            resultado.innerHTML = `Você mora em ${nac}!`
+
+            if (nac == Brasil) {
+                resultado.innerHTML += 'Você é brasileiro!'
+            } else {
+                resultado.innerHTML += 'Você é estrangeiro!'
+            }
+
+        }
+    </script>
+</body>
+</html>

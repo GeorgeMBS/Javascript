@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
@@ -21,16 +23,17 @@
     <script>
         var corpo = window.document.body
         var p1 = window.document.getElementsByTagName('p')[1]
-        
+
         window.document.write('Está escrito assim: ' + p1.innerHTML)
         corpo.style.backgroundColor = 'black'
         corpo.style.color = 'yellow'
-       /* var d = window.document.getElementById('msg')
-        d.style.background = ('blue')*/
+        /* var d = window.document.getElementById('msg')
+         d.style.background = ('blue')*/
 
         var d = window.document.querySelector('div#msg')
         d.style.background = ('blue')
 
-      </script>
+    </script>
 </body>
+
 </html>
