@@ -37,13 +37,13 @@
 
     <script>
         
-        function def() {
-            var nac = document.getElementById('inp')
+        function def() { 
+            var nac = document.getElementById('inp').value
             var resultado = document.getElementById('res')
 
             resultado.innerHTML = `Você mora em ${nac}!`
 
-            if (nac == Brasil) {
+            if (nac == 'Brasil') {
                 resultado.innerHTML += ' Você é brasileiro!'
             } else {
                 resultado.innerHTML += ' Você é estrangeiro!'
