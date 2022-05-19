@@ -32,6 +32,48 @@ switch(dia) {
         break                                 
 }
 
+switch(mês) {
+    case 0:
+        var mês = 'Janeiro'
+        break
+    case 1:
+        var mês = 'Fevereiro'
+        break  
+    case 3:
+        var mês = 'Março'
+        break
+    case 4:
+        var mês = 'Abril'
+        break
+    case 5:
+        var mês = 'Maio'
+        break
+    case 6:
+        var mês = 'Junho'
+        break
+    case 7:
+        var mês = 'Julho'
+        break
+    case 8:
+        var mês = 'Julho'
+        break
+    case 9:
+        var mês = 'Setembro'
+        break
+    case 10:
+        var mês = 'Outubro'
+        break
+    case 11:
+        var mês = 'Novembro'
+        break
+    case 12:
+        var mês = 'Dezembro'
+        break
+    default:
+        var mês = 'Erro! mês inválido.'
+        break                                 
+}
+
 console.log(`Agora são exatamente ${hora} horas e ${min} minutos, ${dia}, e estamos em ${mês} de ${ano}.`)
 
 if (hora < 12) {
