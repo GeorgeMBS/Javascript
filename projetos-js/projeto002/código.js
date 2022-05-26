@@ -16,41 +16,49 @@ function verificar() {
            gênero = 'Homem'
            if (idade >= 0 && idade < 4){
                //Bebê 
-               img.setAttribute('src', 'bebê menino pq.jpg')
-           } else if (idade < 10) {
+               img.setAttribute('src', 'imagens/bebê menino pq.jpg')
+        } else if (idade >= 4 && idade < 10) {
                //Criança
-               img.setAttribute('src', 'criança menino pq.jpg')
-           } else if (idade < 21) {
+               img.setAttribute('src', 'imagens/criança menino pq.jpg')
+        } else if (idade < 21) {
                // Jovem
-               img.setAttribute('src', 'adolescente menino pq.jpg')
-           } else if (idade < 50) {
+               img.setAttribute('src', 'imagens/adolescente menino pq.jpg')
+        } else if (idade < 50) {
                // Adulto
-               img.setAttribute('src', 'adulto homem pq.jpg')
-           } else {
+               img.setAttribute('src', 'imagens/adulto homem pq.jpg')
+        } else {
                // Idoso
-               img.setAttribute('src', 'idoso pq.jpg')
-           }
+               img.setAttribute('src', 'imagens/idoso pq.jpg')
+        }
 
        } else if (fsex[1].checked) {
            gênero = 'Mulher'
            if (idade >= 0 && idade < 4){
-            //Bebê 
-            img.setAttribute('src', 'bebê menina pq.jpg')
-        } else if (idade < 10) {
+            //Bebê
+            img.setAttribute('src', 'imagens/bebê.menina.pq.jpg')
+        } else if (idade <= 4 && idade < 10) {
             //Criança
-            img.setAttribute('src', 'criança menina pq.jpg')
+            img.setAttribute('src', 'imagens/criança menina pq.jpg')
         } else if (idade < 21) {
             // Jovem
-            img.setAttribute('src', 'adolescente menina pq.jpg')
+            img.setAttribute('src', 'imagens/adolescente menina pq.jpg')
         } else if (idade < 50) {
             // Adulto
-            img.setAttribute('src', 'adulto homem pq.jpg')
+            img.setAttribute('src', 'imagens/adulto mulher pq.jpg')
         } else {
             // Idoso
-            img.setAttribute('src', 'idosa pq.jpg')
+            img.setAttribute('src', 'imagens/idosa pq.jpg')
         }
        }
+       
        res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`
-       res.appendChild(img)
+       seção.appendChild(img)
+       document.getElementById("foto").style.borderColor = "black" 
+       document.getElementById("foto").style.borderRadius = "250px" 
+       document.getElementById("foto").style.position = "absolute"
+       document.getElementById("foto").style.left = "42.8%"
+       document.getElementById("foto").style.top = "57%"
+     
     }
+   
 }
