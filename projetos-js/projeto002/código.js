@@ -56,9 +56,14 @@ function verificar() {
        document.getElementById("foto").style.borderColor = "black" 
        document.getElementById("foto").style.borderRadius = "250px" 
        document.getElementById("foto").style.position = "absolute"
-       document.getElementById("foto").style.left = "42.8%"
+       document.getElementById("foto").style.left = "41.8%"
        document.getElementById("foto").style.top = "57%"
+       document.getElementById("foto").style.margin = "20px"
      
     }
    
+}
+
+function reload () {
+    window.location.reload()
 }
