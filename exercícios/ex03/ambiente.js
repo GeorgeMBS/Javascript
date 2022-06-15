@@ -67,3 +67,19 @@
             res.innerHTML += `<p>A média dos valores digitados é ${media}.</p>`
         }
     }
+    //Essa é a função que é ativada ao clicarmos no botão finalizar. Ela primeiramente vai verificar se o usuário digitou algo, se o campo estiver vázio ela emite a mensagem na tela -- window.alert('Adicione valores antes de finalizar!') -- Senão, em seguida ela cria as variáveis dos resultados que vamos querer mostrar na tela -- 
+            // else {
+            // let tot = valores.length (aqui diz que o total vai ser o "tamanho" de valores, ou seja, o número de itens que ele tem.)
+            // let maior = valores[0]
+            // let menor = valores[0]
+            // let soma = 0
+            // let media = 0
+    //Em seguida, com o repetidor for, ele define o valor de soma, maior e menor.
+    // for(let pos in valores) {
+    //     soma += valores[pos]
+    //     if (valores[pos] > maior)
+    //     maior = valores[pos]
+    //     if (valores[pos] < menor)
+    //     menor = valores[pos]
+
+    // Por fim, ela define que a média vai ser a soma dividida pelo total. Em seguida apenas imprimimos na tela com .innerHTML.
